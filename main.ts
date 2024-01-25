@@ -72,7 +72,7 @@ namespace mp3payer {
             connect(SerialPin.P0, SerialPin.P1)
         }
         dataArr[3] = CMD
-        dataArr[5] = para1
+        dataArr[4] = para1
         checkSum()
         sendData()
     }
