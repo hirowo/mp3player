@@ -99,7 +99,9 @@ namespace mp3payer {
     //% blockId="dfplayermini_playFile" block="再生ファイル番号:%fileNumber|repeat:%setRepeat"
     //% weight=98 blockGap=20 fileNumber.min=1 fileNumber.max=255
     export function playFile(fileNumber: number, setRepeat: isRepeat): void {
-        sendcom(0x03, fileNumber)
+//        sendcom(0x03, fileNumber)
+        innerCall(0x03, 0x00, fileNumber)
+
         if (setRepeat == 1) press(0x19)
     }
 
