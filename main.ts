@@ -103,7 +103,7 @@ namespace mp3payer {
         if (setRepeat == 1) press(0x19)
     }
 
-    //% blockId="dfplayermini_playFileInFolder" 指定フォルダ内のファイルを再生:%folderNumber|file number:%fileNumber|repeat:%setRepeat"
+    //% blockId="dfplayermini_playFileInFolder" block="指定フォルダ内のファイルを再生:%folderNumber|file number:%fileNumber|repeat:%setRepeat"
     //% weight=97 blockGap=20 folderNumber.min=1 folderNumber.max=99 fileNumber.min=1 fileNumber.max=255
     export function playFileInFolder(folderNumber: number, fileNumber: number, setRepeat: isRepeat): void {
         innerCall(0x0F, folderNumber, fileNumber)
